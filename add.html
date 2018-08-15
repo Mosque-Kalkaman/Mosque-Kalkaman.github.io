@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ақпарат қосу</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css">
+  <link rel="stylesheet" href="./add.css">
+  <link href="jquery/css/ui-lightness/jquery-ui-1.10.0.custom.css" rel="stylesheet" />
+  <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+</head>
+<body>  
+  <div id="wrapper" style="width: 1020px;">
+
+    <div style="margin-top: 10px; margin-left: 10px;">
+      <div style="float: left;">
+        <img style="width:100px; height: 100px;" src="logo.png" alt="Logo">
+      </div>
+      <div style="margin-left: 103px; height: 100px;" id="name">
+        <span style="float:left; margin-top: 35px; margin-left: 5px;">"Қалқаман-2" мешіті</span>
+      </div>
+    </div><br>
+
+    <div class="ui massive menu" id="menu">
+        <div class="item" onclick="window.location = 'index.html'">
+          <span class="tabs">Басты бет</span>
+        </div>
+        <div class="item" onclick="window.location = 'news.html'">
+          <span class="tabs">Жаңалықтар</span>
+        </div>
+        <div class="item" onclick="window.location = 'uagyz.html'">
+          <span class="tabs">Уағыздар</span>
+        </div>
+        <div class="item" onclick="window.location = 'makala.html'">
+          <span class="tabs">Мақалалар</span>
+        </div>
+        <div class="item" onclick="window.location = 'namaz.html'">
+          <span class="tabs">Намаз оқып үйрену</span>
+        </div>
+        <div class="item" onclick="window.location = 'daris.html'">
+          <span class="tabs">Дәрістер</span>
+        </div>
+    </div>
+
+  <span class="headers">Ақпарат қосу:</span>
+
+<div style="border:1px solid black; width: 650px;">
+  <div style="margin-left: 10px;">
+    <br>
+    Санат: 
+    <select id="category" class="ui dropdown">
+      <option value="0">Уағыздар</option>
+      <option value="1">Жаңалықтар</option>
+      <option value="2">Мақалалар</option>
+      <option value="3">Намаз оқып үйрену</option>
+      <option value="4">Дәрістер</option>
+    </select>
+  </div>
+
+  <br><div style="margin-left: 10px;">
+    Cурет url: 
+    <div class="ui input">
+      <input id="url" type="text" name="Cурет url" placeholder="Cурет url">
+    </div>
+  </div>
+
+  <br><div style="margin-left: 10px;">
+    Kүні: 
+    <div class="ui input">
+      <input id="date" type="text" name="Күні" placeholder="КК.АА.ЖЖЖЖ">
+    </div>
+  </div>
+
+  <br><div style="margin-left: 10px;">
+    Атауы: 
+    <div class="ui form">
+      <div class="field">
+        <input id="header" type="text" name="Атауы" placeholder="Атауы">
+      </div>
+    </div>
+  </div>
+
+  <br><div style="margin-left: 10px;">
+    Mазмұны: 
+    <div class="ui form">
+      <div class="field">
+        <textarea id="contents"></textarea>
+      </div>
+    </div>
+  </div>
+
+  <br><div class = "ui green button" onclick="add()" style="margin-left: 10px;">Қосу</div>
+</div>
+  <br><br>
+
+  <span class="headers">Намаз оқу уақыттарды өзгерту:</span><br>
+  <div style="border:1px solid black; width: 400px;"><br>
+    <span style="margin-left: 10px;">Таң:</span> 
+    <div class="ui input">
+      <input id="tan" type="text" name="уақыт" placeholder="CC:MM">
+     </div><br><br>
+    <span style="margin-left: 10px;">Бесін:</span> 
+    <div class="ui input">
+      <input id="besin" type="text" name="уақыт" placeholder="CC:MM">
+    </div><br><br>
+    <span style="margin-left: 10px;">Екінті:</span> 
+    <div class="ui input">
+      <input id="ekinti" type="text" name="уақыт" placeholder="CC:MM">
+    </div><br><br>
+    <span style="margin-left: 10px;">Ақшам:</span> 
+    <div class="ui input">
+      <input id="aksham" type="text" name="уақыт" placeholder="CC:MM">
+    </div><br><br>
+    <span style="margin-left: 10px;">Құптан:</span> 
+    <div class="ui input">
+      <input id="kuptan" type="text" name="уақыт" placeholder="CC:MM">
+    </div><br><br>
+    <div style="margin-left: 10px;" class = "ui green button" onclick="change()">Өзгерту</div>
+  </div>
+
+  </div>
+  <div style="height: 150px; width: 600px; float: left;">
+  </div>
+
+  <script src="jquery/js/jquery-1.9.0.min.js"></script>
+    <script src="jquery/js/jquery-ui-1.10.0.custom.min.js"></script>
+<!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ -->  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.0.0/firebase.js"></script>
+  <script src="./add.js"></script>
+</body>
+</html>

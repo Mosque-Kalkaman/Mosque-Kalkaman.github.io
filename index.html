@@ -16,31 +16,32 @@
       <div style="float: left;">
         <img style="width:100px; height: 100px;" src="logo.png" alt="Logo">
       </div>
-      <div style="margin-left: 103px; height: 100px;" id="name">
+      <div style="margin-left: 103px; height: 100px;" id="name" onclick="window.location = 'login.html'">
         <span style="float:left; margin-top: 35px; margin-left: 5px;">"Қалқаман-2" мешіті</span>
       </div>
     </div>
 
     <div class="ui massive menu" id="menu">
-        <div class="item">
+        <div class="item" onclick="window.location = 'index.html'">
           <span class="tabs">Басты бет</span>
         </div>
-        <div class="item">
+        <div class="item" onclick="window.location = 'news.html'">
           <span class="tabs">Жаңалықтар</span>
         </div>
-        <div class="item">
+        <div class="item" onclick="window.location = 'uagyz.html'">
           <span class="tabs">Уағыздар</span>
         </div>
-        <div class="item">
+        <div class="item" onclick="window.location = 'makala.html'">
           <span class="tabs">Мақалалар</span>
         </div>
-        <div class="item">
+        <div class="item" onclick="window.location = 'namaz.html'">
           <span class="tabs">Намаз оқып үйрену</span>
         </div>
-        <div class="item">
+        <div class="item" onclick="window.location = 'daris.html'">
           <span class="tabs">Дәрістер</span>
         </div>
     </div>
+
 
     <div>
       <img src="http://old.sunna.kz/upload/orig/mosque/944409_1330950201.jpg" style="float: left; margin-left: 10px;">
@@ -55,23 +56,23 @@
           <tbody>
             <tr>
               <td>Таң</td>
-              <td>04:03</td>
+              <td id="td1">04:03</td>
             </tr>
             <tr>
               <td>Бесін</td>
-              <td>13:02</td>
+              <td id="td2">13:02</td>
             </tr>
             <tr>
               <td>Екінті</td>
-              <td>18:09</td>
+              <td id="td3">18:09</td>
             </tr>
             <tr>
               <td>Ақшам</td>
-              <td>20:21</td>
+              <td id="td4">20:21</td>
             </tr>
             <tr>
               <td>Құптан</td>
-              <td>21:54</td>
+              <td id="td5">21:54</td>
             </tr>
           </tbody>
         </table>
@@ -90,28 +91,21 @@
         <span class="headers">Соңғы жаңалық:</span>
         <div class="item">
           <div class="image">
-            <img src="https://azan.kz/media/images/5b5aba2ee6f89.jpg" style="height: 100%" id="img">
+            <img src="" style="height: 100%" id="img">
           </div>
           <div class="content">
-            <a class="header" style="font-size: 20px;" id="newsHeader">Алматы: ЖАНТ жаңа қарқынмен жұмыс бастады</a>
+            <a class="header" style="font-size: 20px;" id="newsHeader"></a>
             <div class="meta" style="height: 98px; overflow:hidden; font-size: 16px;">
-              <span id="span">"Кеше Алматы қаласы орталық мешіті ғимаратында Қазақстан мұсылмандары діни басқармасы төрағасы, Бас мүфти Серікбай қажы Сатыбалдыұлы хазреттің бастамасымен құрылған жергілікті ақпараттық-насихаттық топ мүшелерінің отырысы өтті. Бас қосуға Алматы қаласы дін істері жөніндегі басқармасының басшысы Айдар Рахымжанұлы және Алматы қаласы орталық мешітінің бас имамы Еркінбек қари Керімбекұлы қатысты.
- 
-Бас имам Еркінбек қари Шохаев имамдар үнемі көпшілік халықтың ортасында жүретіндігін еске салып, ел мен діннің мүддесін даналықпен, дұрыс насихаттай алу қажеттігін тілге тиек етті. Ал, басқарма басшысы Айдар Рахымжанұлы халық арасында зайырлы мемлекетіміздің ұстанымдарын, дініміздің өркендеуіне жасалып жатқан жағдайларды насихаттаудың маңызы зор екендігін айтты.
- 
-Жиын соңында Алматы қаласы көлемінде жүргізілетін насихаттық жұмыстардың жоспары бекітіліп, ...
-
-Толығырақ: https://azan.kz/kz/ahbar/read/almatyi-zhant-zhana-qarqyinmen-zhumyis-bastadyi-11200. Мақалаларды қалай болсын қолдану тек azan.kz сілтемесімен ғана рұқсат етіледі."</span>
+              <span id="span"></span>
             </div>
             <div class="description">
               <p></p>
             </div>
-            <div class="extra">
-              27.07.2018
+            <div class="extra" id="date">
             </div>
           </div>
         </div>
-        <a>Басқа жаңалықтар ></a>
+        <a id="link" onclick="window.location = 'news.html'">Басқа жаңалықтар ></a>
       </div>
 
   </div>

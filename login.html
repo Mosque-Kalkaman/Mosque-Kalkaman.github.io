@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Жаңалықтар</title>
+	<title>"Қалқаман-2" мешітіне қош келдіңіз!</title>
   <meta charset="UTF-8">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css">
-	<link rel="stylesheet" href="./newscss.css">
+	<link rel="stylesheet" href="./login.css">
 	<link href="jquery/css/ui-lightness/jquery-ui-1.10.0.custom.css" rel="stylesheet" />
   <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
@@ -42,13 +42,14 @@
         </div>
     </div>
 
+    <div style="margin-left: auto; margin-right: auto; display: block; width: 160px;">
+    	<span style="font-size: 19px;">Логин</span><br>
+    	<input id="idInput" placeholder="Логин" type="text"><br><br>
+    	<span style="font-size: 19px;">Пароль</span><br>
+    	<input id="passwordInput" placeholder="Пароль" type="text"><br><br>
+    	<div class = "ui green basic button" onclick="login()">Kіру</div>
+    </div>
 
-      <div class="ui items" style="width: 900px; float:left; margin-left: 10px; margin-top: 20px;">
-        <span class="headers fxd">Жаңалықтар:</span>
-      </div>
-
-  </div>
-  <div style="height: 150px; width: 600px; float: left;">
   </div>
 
 	<script src="jquery/js/jquery-1.9.0.min.js"></script>
@@ -56,6 +57,6 @@
 <!-- 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
  -->	<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/4.0.0/firebase.js"></script>
-	<script src="./newsjs.js"></script>
+	<script src="./login.js"></script>
 </body>
 </html>
