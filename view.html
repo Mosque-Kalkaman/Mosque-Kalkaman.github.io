@@ -4,7 +4,7 @@
   <title>Set Title</title>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css">
-  <link rel="stylesheet" href="./add.css">
+  <link rel="stylesheet" href="./view.css">
   <link href="jquery/css/ui-lightness/jquery-ui-1.10.0.custom.css" rel="stylesheet" />
   <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
@@ -45,21 +45,14 @@
     <div class="ui link cards">
       <div class="card" style="width: 1018px;">
         <div class="image">
-          <img src="https://azan.kz/media/images/5b652d90b3837.jpg">
+          <img id="img" src="">
         </div>
         <div class="content">
-          <div class="header" style="font-size: 25px;">Балгабек Мырзаев: Информация о сносе мечетей не соответствует действительности</div>
+          <div class="header" id="newsHeader" style="font-size: 25px;"></div>
           <div class="meta">
-            <a>04.08.2018</a>
+            <a id="date"></a>
           </div>
-          <div class="description" style="font-size: 18px;">
-            Комитет по делам гражданского общества Министерства общественного согласия РК опроверг информацию некоторых СМИ о том, что мечети, распололоженные менее чем 300 метрах от школ подлежат сносу, сообщает Azan.kz со ссылкой на информационный портал Aikyn.kz
-   
-  По словам г-на Б.Мырзаева, действующее законодательство РК устанавливает определенные требования для возведения религиозных и культовых сооружений, однако в нормах не прописаны требования, касательно расположения таких зданий на расстоянии не менее 300 метров от зданий образовательных учреждений. Данный запрет касается магазинов и иных торговых точек, предназначенных для реализации религиозных товаров а также мест проведения религиозных обрядов вне территорий мечетей.
-   
-  Таким образом, информация о том, что якобы мечети расположенные на расстояний ...
-
-  Подробнее: https://azan.kz/ahbar/read/balgabek-myirzaev-informatsiya-o-snose-mechetey-ne-sootvetstvuet-11204. Любое использование материалов допускается только при наличии гиперссылки на azan.kz.
+          <div class="description" id="span" style="font-size: 18px;">
           </div>
         </div>
       </div>
@@ -75,6 +68,6 @@
 <!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
  -->  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.js"></script>
   <script src="https://www.gstatic.com/firebasejs/4.0.0/firebase.js"></script>
-  <script src="./add.js"></script>
+  <script src="./view.js"></script>
 </body>
 </html>

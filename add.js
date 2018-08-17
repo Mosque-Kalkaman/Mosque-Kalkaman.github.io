@@ -65,5 +65,5 @@ function change(){
 		aksham: aksham,
 		kuptan: kuptan
 	}
-	$.when($.when(timeRef.remove()).done(timeRef.push(timeObj))).done(window.location.replace("index.html");)
+	$.when($.when(timeRef.remove()).done(timeRef.push(timeObj))).done(window.location.replace("index.html"))
 }
