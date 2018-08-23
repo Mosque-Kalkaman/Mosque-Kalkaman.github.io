@@ -9,6 +9,7 @@ function populate(){
 		document.getElementById('newsHeader').innerHTML = localStorage.header
 		$("#img").attr("src", localStorage.url);
 		document.getElementById('date').innerHTML = localStorage.date
+		document.title = localStorage.header
         }
       else
         {
